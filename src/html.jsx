@@ -11,6 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <meta name="google-site-verification" content="HiUBaopAvbs4hBIvbryJPdFfnk0zvILlfmzQdNvz0zQ" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
