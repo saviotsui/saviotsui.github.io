@@ -13,6 +13,13 @@ module.exports = {
         pathToConfigModule: "src/utils/typography.js"
       },
     },
+    {
+      resolve: "gatsby-plugin-react-helmet"
+    }
   ],
   // pathPrefix: "/reponame",
+  siteMetadata: {
+    title: 'Savio Tsui',
+    siteUrl: 'https://saviotsui.com/',
+  },
 }
