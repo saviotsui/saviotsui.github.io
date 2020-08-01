@@ -1,7 +1,8 @@
 import React from "react"
 import styled from 'styled-components';
-import Header from "../components/header"
-import Image from "../components/image"
+import Helmet from "../components/helmet";
+import Header from "../components/header";
+import Image from "../components/image";
 import CenteredLayout from '../layouts/centered-layout';
 import Section from '../layouts/section';
 
@@ -37,6 +38,7 @@ const IconSection = styled(Section)`
 export default function Home() {
     return (
         <Container>
+            <Helmet></Helmet>
             <LeftContainer></LeftContainer>
             <CenterContainer>
                 <CenteredLayout>
@@ -46,8 +48,8 @@ export default function Home() {
                             <IconSection>
                                 <a href="https://www.splunk.com/" target="_blank" rel="noreferrer"><Image src="/assets/splunk/splunk-logo.png" alt="Splunk, Inc." height={imageDimension} width={imageDimension}></Image></a>
                                 <a href="https://github.com/saviotsui/" target="_blank" rel="noreferrer"><Image src="/assets/github/github-logo.png" alt="Github, Inc." height={imageDimension} width={imageDimension}></Image></a>
-                                <a href="https://www.linkedin.com/in/saviotsui/" target="_blank" rel="noreferrer"><Image src="/assets/linkedin/linkedin-logo.png" alt="Linkedin Corp." height={imageDimension} width={imageDimension} backgroundColor="white"></Image></a>
-                                <a href="https://www.strava.com/athletes/2815426" target="_blank" rel="noreferrer"><Image src="/assets/strava/strava-logo.png" alt="Strava, Inc." height={imageDimension} width={imageDimension} backgroundColor="white"></Image></a>
+                                <a href="https://www.linkedin.com/in/saviotsui/" target="_blank" rel="noreferrer"><Image src="/assets/linkedin/linkedin-logo.png" alt="Linkedin Corp." height={imageDimension} width={imageDimension}></Image></a>
+                                <a href="https://www.strava.com/athletes/2815426" target="_blank" rel="noreferrer"><Image src="/assets/strava/strava-logo.png" alt="Strava, Inc." height={imageDimension} width={imageDimension}></Image></a>
                             </IconSection>
                         </Body>
                     </Section>
