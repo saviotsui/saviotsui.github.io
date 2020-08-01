@@ -22,7 +22,7 @@ const PORTAL_HELMET_DATA_MODEL = {
     ],
 };
 
-export default function PortalHelmet({ title }) {
+const PortalHelmet = ({ title, children }) => {
     return (
         <StaticQuery
             query={graphql`
@@ -41,6 +41,7 @@ export default function PortalHelmet({ title }) {
                     meta={PORTAL_HELMET_DATA_MODEL.metadata}
                     link={PORTAL_HELMET_DATA_MODEL.link}
                 >
+                    {children}
                 </Helmet>
             )}
         </StaticQuery>
@@ -54,3 +55,5 @@ PortalHelmet.propTypes = {
 PortalHelmet.defaultProps = {
     title: '',
 };
+
+export default PortalHelmet;

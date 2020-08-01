@@ -10,10 +10,10 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const CenteredLayout = ({ children }) => {
+const CenteredLayout = props => {
   return (
     <Container>
-      {children}
+      {props.children}
     </Container>
   );
 }
