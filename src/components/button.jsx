@@ -8,7 +8,7 @@ const Button = styled.button`
     --color-2: #FC6471;
     --color-3: #DDDFDF;
     --color-4: #7D5BA6;
-    --color-5: #33343b
+    --color-5: #33343b;
     --font-size: 18px;
 
     font-size: var(--font-size);

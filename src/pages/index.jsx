@@ -8,8 +8,9 @@ import Image from "../components/image";
 
 const imageDimension = 24;
 const IconSection = styled(Section)`
-    display: flex !important;
-    justify-content: space-between !important;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
 `;
 
 export default function Home() {
