@@ -5,8 +5,8 @@ import Helmet from "../components/helmet";
 const Container = styled.div`
     display: flex;
     background-color: #33343b;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 `;
 
 const Item = styled.div`
